@@ -1,0 +1,293 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+header{
+  width: 100%;
+  background-color: #1F2937;
+  color: #F9FAFB;
+  height: 150px;
+}
+header a {
+  text-decoration: none;
+  color: inherit;  
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 140px;
+
+}
+.nav-bar .nav-list {
+    list-style-type: none;
+ 
+}
+
+/*select the main container */
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+     width: 100%;   
+}
+.main-container .welcome{
+  width: 100%;
+  height: 500PX;  
+  background-color: #1F2937;
+  color: #F9FAFB;
+  padding: 8px;
+
+}
+.welcome-section{
+    display: flex;
+    width: 85%;
+    margin: 0px auto;
+}
+.welcome-section div{
+    margin: auto;
+}
+.welcome .welcome-img{
+    width: 300px;
+    height: auto;
+}
+.welcome-section .ready{
+    margin-top: 20px;
+}
+.welcome-section .welcome-button{
+    margin-top: 20px;
+    width: 40%;
+    padding: 20px;
+    height: 90px;
+
+}
+.image-quotes-container .image{
+    height: 100px;
+    width: auto;
+}
+.image-quotes-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    gap: 30px;
+}
+.image-quotes-container .image-box{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nevergiveup{
+    background-color: #E5E7EB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nevergiveup p {
+    width: 60%;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    color: #FFFFFF;
+}
+.footer-container .call-to-action{
+    height: 120px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3B82F6;
+    border-radius: 8px;
+}
+.call-to-action p{
+    color: #A7C2EF;
+}
+.call-to-action .button-container{
+    width: 40%;
+}
+.call-to-action .call-to-action-button{
+    width: 100%;
+    padding: 10px;
+    color-scheme: #EEE;
+    background: #3B82F6;
+    border-radius: 10px;
+    border: 1px solid #EEE;
+}
+.copyright{
+    background-color: #1F2937;
+    color:#FFFFFF;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright small{
+    border: 1px solid rgb(255,255,255);
+    border-radius: 60%;
+    margin: 10px;
+
+}
+
+
+header:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 9px 19px #0c0e11;
+}
+
+header:hover .logo {
+    font-size: 25px;
+}
+
+header:hover .nav-list {
+    font-size: 19px;
+}
+
+
+header:hover li:hover{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.button:hover{
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:250px) {
+    .welcome-section .welcome-button{
+        display: none;
+    }
+}
+
+
+@media (min-width:801px) {
+    .nav-list li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .welcome-section .ready {
+        width: 60%;
+    }
+
+    .welcome-section .welcome-button {
+    
+        height: 90px;
+    }
+
+    .nevergiveup p{
+        font-size: 20px;
+    }
+}
+/* 
+@media (max-width:300px) {
+    .welcome-section .welcome-button {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome-section .welcome-button {
+
+        height: 10px;
+        width: auto;
+    }
+
+    .nevergiveup {
+        height: 400px;
+
+    }
+} */
+
+@media (max-width:800px) {
+    .main-container .welcome-section {
+        flex-direction: column;
+
+    }
+
+    .welcome-section .welcome-button {
+        padding: 20px;
+
+        width: 100%;
+        font-weight: 700;
+
+    }
+    
+
+    .nevergiveup p {
+        width: 80%;
+        height: auto;
+    }
+
+    .nevergiveup {
+        height: 400px;
+
+    }
+
+    .welcome-img {
+        display: none;
+    }
+
+    .main-container .welcome {
+        height: 600px;
+    }
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+
+    .image-quotes-container {
+        flex-direction: column;
+        height: 1100px;
+    }
+
+
+    .welcome .preamble {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preamble .welcome-button {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .nav-bar .nav-list li{
+        margin-top: 5px;
+        padding: 5px;
+
+        border: 1px solid #E5E7EB;
+    }
+
+    .footer-container .call-to-action{
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .footer-container{
+        height: 250px;
+    }
+}
